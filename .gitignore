@@ -45,6 +45,10 @@
 # Kernel Module Compile Results
 *.mod*
 *.cmd
+
+xnet_tiny_*/x64
+.vs
+.vscode
 .tmp_versions/
 modules.order
 Module.symvers
