@@ -1,0 +1,9 @@
+/cygdrive/d/my_protocol/xnet/src/build/CMakeFiles/xnet.dir
+/cygdrive/d/my_protocol/xnet/src/build/CMakeFiles/edit_cache.dir
+/cygdrive/d/my_protocol/xnet/src/build/CMakeFiles/rebuild_cache.dir
+/cygdrive/d/my_protocol/xnet/src/build/xnet_tiny/CMakeFiles/xnet_tiny.dir
+/cygdrive/d/my_protocol/xnet/src/build/xnet_tiny/CMakeFiles/edit_cache.dir
+/cygdrive/d/my_protocol/xnet/src/build/xnet_tiny/CMakeFiles/rebuild_cache.dir
+/cygdrive/d/my_protocol/xnet/src/build/xnet_app/CMakeFiles/xnet_app.dir
+/cygdrive/d/my_protocol/xnet/src/build/xnet_app/CMakeFiles/edit_cache.dir
+/cygdrive/d/my_protocol/xnet/src/build/xnet_app/CMakeFiles/rebuild_cache.dir

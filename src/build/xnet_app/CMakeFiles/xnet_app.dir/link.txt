@@ -1,0 +1,2 @@
+/usr/bin/ar.exe qc libxnet_app.a CMakeFiles/xnet_app.dir/port_pcap.c.o
+/usr/bin/ranlib.exe libxnet_app.a

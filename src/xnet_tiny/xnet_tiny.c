@@ -67,7 +67,7 @@ static xnet_err_t ethernet_init(void){
 static xnet_err_t ethernet_out_to(xnet_protocol_t protocol, const uint8_t* mac_addr, xnet_packet_t* packet){
     xether_hdr_t* ether_hdr;
     add_header(packet, sizeof(xether_hdr_t));
-    ether_hdr = (xnet_hdr_t*)packet->data;
+    ether_hdr = (xether_hdr_t*)packet->data;
     memcpy(ether_hdr->dest, mac_addr, XNET_MAC_ADDR_SIZE);
     memcpy(ether_hdr->src, netif_mac, XNET_MAC_ADDR_SIZE);
     ether_hdr->protocol = protocol;
@@ -85,14 +85,13 @@ static void ethernet_in(xnet_packet_t* packet){
         case XNET_PROTOCOL_ARP:
             break;
         case XNET_PROTOCOL_IP:
-            break
+            break;
     }
 }
 
-
 static void ethernet_poll(void){
     xnet_packet_t *packet;
-    if(xnet_driver_read(packet) == xnet_err_t){
+    if(xnet_driver_read(&packet) == XNET_ERR_OK){
         ethernet_in(packet);
     }
 }
@@ -105,7 +104,7 @@ void xnet_poll(void) {
 }
 
 
-void xnet_init (void) {
+void xnet_init(void) {
     ethernet_init();
 }
 

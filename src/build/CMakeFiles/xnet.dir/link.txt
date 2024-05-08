@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--enable-auto-import CMakeFiles/xnet.dir/cygdrive/d/my_protocol/xnet/lib/xnet/pcap_device.c.o CMakeFiles/xnet.dir/app.c.o -o xnet.exe -Wl,--out-implib,libxnet.dll.a -Wl,--major-image-version,0,--minor-image-version,0  xnet_tiny/libxnet_tiny.a xnet_app/libxnet_app.a /cygdrive/d/my_protocol/xnet/src/../lib/npcap/Lib/x64/wpcap.lib 

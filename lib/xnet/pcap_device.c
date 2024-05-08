@@ -313,10 +313,9 @@ uint32_t pcap_device_send(pcap_t* pcap, const uint8_t* buffer, uint32_t length) 
  * 从网络接口读取数据包
  */
 uint32_t pcap_device_read(pcap_t* pcap, uint8_t* buffer, uint32_t length) {
-    int err;
+    int err = 0;
     struct pcap_pkthdr* pkthdr;
     const uint8_t* pkt_data;
-
     err = pcap_next_ex(pcap, &pkthdr, &pkt_data);
     if (err == 0) {
         return 0;

@@ -4,7 +4,8 @@
 int main(){
     xnet_init();
 
-    printf(1){
+    printf("xnet running\n");
+    while (1) {
         xnet_poll();
     }
     return 0;
